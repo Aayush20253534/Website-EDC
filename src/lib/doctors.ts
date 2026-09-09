@@ -39,10 +39,10 @@ export const doctors: Doctor[] = [
       "iTero Element digital scanning",
     ],
     bio: [
-      "Dr. Umang Malviya is an orthodontist with an MDS in Orthodontics and Dentofacial Orthopaedics — a three-year specialist degree taken after BDS, devoted entirely to tooth movement, jaw growth and bite correction.",
-      "He is a certified Invisalign provider and plans every aligner case himself on Invisalign's ClinCheck software, rather than delegating the digital setup. Each stage of movement is reviewed and modified before a single aligner is manufactured, which is what separates a well-finished aligner case from an approximate one.",
+      "Dr. Umang Malviya is an orthodontist with an MDS in Orthodontics and Dentofacial Orthopaedics — a three-year specialist degree taken after BDS, devoted entirely to tooth movement, jaw gro[...]",
+      "He is a certified Invisalign provider and plans every aligner case himself on Invisalign's ClinCheck software, rather than delegating the digital setup. Each stage of movement is reviewed a[...]",
       "The clinic runs an iTero Element intraoral scanner, so impressions are taken digitally. There is no putty tray, and the scan feeds straight into treatment planning.",
-      "His approach to case selection is deliberately conservative. Aligners are excellent for a wide range of cases and genuinely unsuitable for some, and patients are told which category they fall into at the consultation — not after treatment has started.",
+      "His approach to case selection is deliberately conservative. Aligners are excellent for a wide range of cases and genuinely unsuitable for some, and patients are told which category they fa[...]",
     ],
     focus: [
       { label: "Invisalign clear aligners", slug: "invisalign-clear-aligners" },
@@ -59,7 +59,7 @@ export const doctors: Doctor[] = [
   },
   {
     slug: "dr-anuja-raj",
-    name: "Dr. Anuja Raj",
+    name: "Dr. Anuja Ray",
     shortName: "Dr. Anuja",
     qualification: "BDS, MDS",
     role: "Endodontist — Root Canal Specialist",
@@ -67,17 +67,17 @@ export const doctors: Doctor[] = [
       "Specialist endodontist focused on saving teeth others would extract.",
     image: "/images/team/dr-anuja-raj.webp",
     imageAlt:
-      "Dr. Anuja Raj, MDS Conservative Dentistry and Endodontics at Eclectic Dental Care, Prayagraj",
+      "Dr. Anuja Ray, MDS Conservative Dentistry and Endodontics at Eclectic Dental Care, Prayagraj",
     credentials: [
       "MDS — Conservative Dentistry & Endodontics",
       "Single-visit root canal treatment",
       "Aesthetic restorative dentistry",
     ],
     bio: [
-      "Dr. Anuja Raj holds an MDS in Conservative Dentistry and Endodontics — the specialism concerned with treating disease inside the tooth and rebuilding what decay has taken, while removing as little healthy structure as possible.",
-      "Endodontics is precise work. Root canal systems are narrow, curved and frequently branch in ways a general radiograph does not reveal. Specialist training and proper isolation are what separate a root canal that lasts decades from one that fails in a few years.",
-      "Many straightforward cases are completed in a single visit. Where there is active swelling or complex canal anatomy, treatment is staged across two appointments — a clinical decision, explained at the time rather than presented as a delay.",
-      "Her restorative work covers tooth-coloured fillings, crowns, veneers and post-endodontic rebuilding, with an emphasis on the seal at the margin. A restoration that is beautiful but leaks is a restoration that fails.",
+      "Dr. Anuja Ray holds an MDS in Conservative Dentistry and Endodontics — the specialism concerned with treating disease inside the tooth and rebuilding what decay has taken, while removing [...]",
+      "Endodontics is precise work. Root canal systems are narrow, curved and frequently branch in ways a general radiograph does not reveal. Specialist training and proper isolation are what sepa[...]",
+      "Many straightforward cases are completed in a single visit. Where there is active swelling or complex canal anatomy, treatment is staged across two appointments — a clinical decision, exp[...]",
+      "Her restorative work covers tooth-coloured fillings, crowns, veneers and post-endodontic rebuilding, with an emphasis on the seal at the margin. A restoration that is beautiful but leaks is[...]",
     ],
     focus: [
       { label: "Root canal treatment", slug: "root-canal-treatment" },
@@ -89,9 +89,9 @@ export const doctors: Doctor[] = [
     ],
     quote:
       "No implant works quite as well as the tooth you were born with. If a tooth can be saved, that is the first conversation — not the last resort.",
-    metaTitle: "Dr. Anuja Raj — Endodontist, Prayagraj",
+    metaTitle: "Dr. Anuja Ray — Endodontist, Prayagraj",
     metaDescription:
-      "Dr. Anuja Raj, MDS Endodontics at Eclectic Dental Care, Civil Lines, Prayagraj. Single-visit root canal treatment and restorative dentistry.",
+      "Dr. Anuja Ray, MDS Endodontics at Eclectic Dental Care, Civil Lines, Prayagraj. Single-visit root canal treatment and restorative dentistry.",
   },
 ];
 
