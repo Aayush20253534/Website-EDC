@@ -14,7 +14,7 @@ import { breadcrumbSchema, graph, webPageSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "About Our Dental Clinic in Civil Lines",
   description:
-    "A specialist-led dental clinic on Sardar Patel Marg, Civil Lines, Prayagraj — orthodontics, endodontics and certified Invisalign treatment.",
+    "A specialist-led dental clinic near Hira Halwai Chauraha, Civil Lines, Prayagraj — orthodontics, endodontics and certified Invisalign treatment.",
   alternates: { canonical: "/about" },
 };
 
