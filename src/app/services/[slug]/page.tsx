@@ -43,6 +43,13 @@ const familyHubSlugs = new Set<string>([
   "dentures-full-mouth-rehab",
 ]);
 
+const checkupHubSlugs = new Set<string>([
+  "scaling-and-polishing",
+  "gum-disease-treatment",
+  "tooth-coloured-fillings",
+  "kids-dentistry",
+]);
+
 export function generateStaticParams() {
   return services.map((s) => ({ slug: s.slug }));
 }
@@ -77,6 +84,7 @@ export default async function ServicePage(props: PageProps<"/services/[slug]">) 
   const doctors = leadDoctors(service.lead);
   const linksToCosmeticHub = cosmeticHubSlugs.has(service.slug);
   const linksToFamilyHub = familyHubSlugs.has(service.slug);
+  const linksToCheckupHub = checkupHubSlugs.has(service.slug);
   const related = service.related
     .map((s) => getService(s))
     .filter((s): s is NonNullable<typeof s> => Boolean(s));
@@ -275,6 +283,14 @@ export default async function ServicePage(props: PageProps<"/services/[slug]">) 
                       className="text-sm font-semibold text-brick transition-colors hover:text-brick-hover"
                     >
                       Family dentistry →
+                    </Link>
+                  )}
+                  {linksToCheckupHub && (
+                    <Link
+                      href="/dental-checkup-prayagraj"
+                      className="text-sm font-semibold text-brick transition-colors hover:text-brick-hover"
+                    >
+                      Dental checkup →
                     </Link>
                   )}
                 </div>
