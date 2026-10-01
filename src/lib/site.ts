@@ -16,7 +16,7 @@ export const site = {
   subTagline: "For Every Age, Every Smile.",
   url: SITE_URL,
   description:
-    "Eclectic Dental Care is a certified Invisalign provider in Civil Lines, Prayagraj. Led by Dr. Umang Malviya (MDS Orthodontics) and Dr. Anuja Raj (MDS Endodontics), with iTero digital scanning and single-visit root canals.",
+    "Eclectic Dental Care is a specialist dental clinic near Hira Halwai Chauraha in Civil Lines, Prayagraj. Led by MDS specialists in orthodontics and endodontics, with Invisalign, iTero digital scanning and advanced restorative care.",
 
   // — Contact —
   phone: "+918707537640",
@@ -26,15 +26,19 @@ export const site = {
 
   // — Address (must mirror Google Business Profile exactly) —
   address: {
-    street: "Sardar Patel Marg",
+    street: "63A/1, Thornhill Road",
+    landmark: "Hira Halwai Chauraha",
+    neighborhood: "Vivek Vihar Colony",
     locality: "Civil Lines",
     city: "Prayagraj",
+    alternateCityName: "Allahabad",
     region: "Uttar Pradesh",
     postalCode: "211001",
     country: "IN",
     countryName: "India",
   },
-  addressLine: "Sardar Patel Marg, Civil Lines, Prayagraj, Uttar Pradesh 211001",
+  addressLine:
+    "63A/1, Thornhill Road, Hira Halwai Chauraha, Vivek Vihar Colony, Civil Lines, Prayagraj, Uttar Pradesh 211001",
 
   geo: { lat: 25.4601743, lng: 81.8356191 },
 
@@ -53,9 +57,10 @@ export const site = {
    */
   contentReviewedOn: "2026-09-09" as string | null,
 
-  mapsUrl: "https://maps.app.goo.gl/4Vyeb8GSGsXVYXh29",
+  mapsUrl:
+    "https://www.google.com/maps/search/?api=1&query=63A%2F1%2C%20Thornhill%20Road%2C%20Hira%20Halwai%20Chauraha%2C%20Civil%20Lines%2C%20Prayagraj%2C%20Uttar%20Pradesh%20211001",
   mapsEmbed:
-    "https://www.google.com/maps?q=25.4601743,81.8356191&hl=en&z=17&output=embed",
+    "https://www.google.com/maps?q=63A%2F1%2C%20Thornhill%20Road%2C%20Hira%20Halwai%20Chauraha%2C%20Civil%20Lines%2C%20Prayagraj%2C%20Uttar%20Pradesh%20211001&hl=en&z=17&output=embed",
 
   social: {
     instagram: "https://www.instagram.com/eclectic_dental_care",
@@ -64,22 +69,29 @@ export const site = {
 
   /**
    * Opening hours. `opens`/`closes` are 24h for schema.org; `label` is what
-   * humans read. Sunday is evening-only.
+   * humans read. Keep these aligned with the clinic's public business listing.
    */
   hours: [
     {
-      days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-      label: "Monday – Saturday",
+      days: ["Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
+      label: "Mon, Tue & Thu – Sat",
       time: "10:00 am – 8:00 pm",
       opens: "10:00",
       closes: "20:00",
     },
     {
+      days: ["Wednesday"],
+      label: "Wednesday",
+      time: "9:00 am – 8:00 pm",
+      opens: "09:00",
+      closes: "20:00",
+    },
+    {
       days: ["Sunday"],
       label: "Sunday",
-      time: "6:00 pm – 8:00 pm",
-      opens: "18:00",
-      closes: "20:00",
+      time: "10:00 am – 2:00 pm",
+      opens: "10:00",
+      closes: "14:00",
     },
   ],
 
