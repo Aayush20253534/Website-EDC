@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { SITE_URL, site } from "@/lib/site";
 import { services } from "@/lib/services";
 import { doctors } from "@/lib/doctors";
+import { guides } from "@/lib/guides";
 
 /**
  * `lastModified` deliberately does NOT use `new Date()`.
@@ -28,6 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       { url: `${SITE_URL}/contact`, changeFrequency: "monthly", priority: 0.8 },
       { url: `${SITE_URL}/about`, changeFrequency: "yearly", priority: 0.6 },
       { url: `${SITE_URL}/gallery`, changeFrequency: "monthly", priority: 0.6 },
+      { url: `${SITE_URL}/guides`, changeFrequency: "monthly", priority: 0.75 },
     ] satisfies MetadataRoute.Sitemap
   ).map((r) => ({ ...r, lastModified: CONTENT_UPDATED }));
 
@@ -45,5 +47,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticRoutes, ...serviceRoutes, ...doctorRoutes];
+  const guideRoutes: MetadataRoute.Sitemap = guides.map((guide) => ({
+    url: `${SITE_URL}/guides/${guide.slug}`,
+    lastModified: CONTENT_UPDATED,
+    changeFrequency: "monthly",
+    priority: 0.65,
+  }));
+
+  return [...staticRoutes, ...serviceRoutes, ...doctorRoutes, ...guideRoutes];
 }
