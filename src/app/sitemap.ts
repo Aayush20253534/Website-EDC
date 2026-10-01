@@ -11,7 +11,8 @@ import { doctors } from "@/lib/doctors";
  * learns to distrust the signal and stops using it. These dates move only
  * when the content genuinely does.
  */
-const CONTENT_UPDATED = new Date(site.contentReviewedOn ?? "2026-09-09");
+// Part 0 changed site-wide structured data and canonical NAP on this date.
+const CONTENT_UPDATED = new Date("2026-10-01");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = (
