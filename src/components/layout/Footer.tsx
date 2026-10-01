@@ -88,6 +88,7 @@ export function Footer() {
           <FooterLink href="/doctors">Our doctors</FooterLink>
           <FooterLink href="/services/invisalign-clear-aligners">Invisalign & aligners</FooterLink>
           <FooterLink href="/gallery">Clinic gallery</FooterLink>
+          <FooterLink href="/locations/civil-lines-prayagraj">Civil Lines clinic</FooterLink>
           <FooterLink href="/areas-we-serve">Areas we serve</FooterLink>
           <FooterLink href="/contact">Contact & directions</FooterLink>
           <FooterLink href="/services/emergency-dental-care">
