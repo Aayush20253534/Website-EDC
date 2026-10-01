@@ -58,7 +58,7 @@ export function ClinicReels() {
           index="05"
           eyebrow="Inside the clinic"
           title={["Look around", "before you arrive."]}
-          lede="Filmed at the practice on Sardar Patel Marg — no stock footage, no staged models. This is the room you will actually sit in."
+          lede="Filmed at the practice near Hira Halwai Chauraha in Civil Lines — no stock footage, no staged models. This is the room you will actually sit in."
           action={<ArrowLink href="/gallery">Full gallery</ArrowLink>}
         />
       </div>
