@@ -24,7 +24,7 @@ export const clinicFaqs = [
   },
   {
     q: "Which doctor will I see?",
-    a: "It depends on what you need. Dr. Umang Malviya (MDS Orthodontics) handles braces, aligners and bite correction. Dr. Anuja Raj (MDS Endodontics) handles root canals, fillings, crowns and gum treatment. For anything unclear, either will see you and direct you correctly.",
+    a: "It depends on what you need. Dr. Umang Malviya (MDS Orthodontics) handles braces, aligners and bite correction. Dr. Anuja Ray (MDS Endodontics) handles root canals, fillings, crowns and gum treatment. For anything unclear, either will see you and direct you correctly.",
   },
   {
     q: "How much will my treatment cost?",
