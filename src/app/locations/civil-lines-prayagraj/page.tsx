@@ -125,17 +125,17 @@ export default function CivilLinesLocationPage() {
 
       <section className="section bg-ivory pt-0 md:pt-0">
         <div className="shell grid gap-10 lg:grid-cols-12 lg:items-stretch lg:gap-14">
-          <Reveal className="lg:col-span-7">
+          <Reveal className="min-w-0 lg:col-span-7">
             <ParallaxImage
               src="/images/clinic/reception.webp"
               alt="Reception and waiting area at Eclectic Dental Care, Civil Lines, Prayagraj"
               sizes="(max-width: 1024px) 92vw, 58vw"
               strength={0.06}
-              className="aspect-[16/11] h-full min-h-[20rem] rounded-3xl border border-line"
+              className="aspect-[4/3] w-full max-w-full rounded-3xl border border-line sm:aspect-[16/11]"
             />
           </Reveal>
 
-          <Reveal delay={0.12} className="lg:col-span-5">
+          <Reveal delay={0.12} className="min-w-0 lg:col-span-5">
             <div className="flex h-full flex-col rounded-3xl border border-line bg-surface p-7 sm:p-9">
               <p className="eyebrow text-brick">Visit the clinic</p>
               <h2 className="mt-4 font-display text-3xl leading-tight text-cocoa sm:text-4xl">
