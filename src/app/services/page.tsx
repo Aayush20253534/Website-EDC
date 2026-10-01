@@ -10,6 +10,7 @@ import {
   servicesByCategory,
   servicePath,
 } from "@/lib/services";
+import { site } from "@/lib/site";
 import {
   breadcrumbSchema,
   graph,
@@ -22,6 +23,23 @@ export const metadata: Metadata = {
   description:
     "All dental treatments in Civil Lines, Prayagraj — Invisalign, braces, root canals, implants, crowns, whitening, kids dentistry and emergency care.",
   alternates: { canonical: "/services" },
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: "/services",
+    siteName: site.name,
+    title: "All Dental Treatments in Prayagraj | Eclectic Dental Care",
+    description:
+      "All dental treatments in Civil Lines, Prayagraj — Invisalign, braces, root canals, implants, crowns, whitening, kids dentistry and emergency care.",
+    images: ["/images/clinic/operatory-wide.webp"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "All Dental Treatments in Prayagraj | Eclectic Dental Care",
+    description:
+      "All dental treatments in Civil Lines, Prayagraj — Invisalign, braces, root canals, implants, crowns, whitening, kids dentistry and emergency care.",
+    images: ["/images/clinic/operatory-wide.webp"],
+  },
 };
 
 const trail = [
