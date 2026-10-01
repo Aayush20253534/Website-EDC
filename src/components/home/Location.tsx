@@ -46,12 +46,20 @@ export function Location() {
                   <br />
                   {site.address.region} {site.address.postalCode}
                 </address>
-                <Link
-                  href="/areas-we-serve"
-                  className="mt-3 inline-flex text-sm font-semibold text-brick transition-colors hover:text-brick-hover"
-                >
-                  See areas we serve →
-                </Link>
+                <div className="mt-3 flex flex-wrap gap-x-5 gap-y-2">
+                  <Link
+                    href="/locations/civil-lines-prayagraj"
+                    className="inline-flex text-sm font-semibold text-brick transition-colors hover:text-brick-hover"
+                  >
+                    Civil Lines clinic →
+                  </Link>
+                  <Link
+                    href="/areas-we-serve"
+                    className="inline-flex text-sm font-semibold text-brick transition-colors hover:text-brick-hover"
+                  >
+                    See areas we serve →
+                  </Link>
+                </div>
               </div>
 
               <div className="mt-8 border-t border-line pt-6">
