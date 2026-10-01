@@ -24,11 +24,11 @@ export const areaGroups: {
     eyebrow: "Close to the clinic",
     title: "Civil Lines and central Prayagraj",
     blurb:
-      "The clinic is on Sardar Patel Marg in Civil Lines, so these are the areas most of our patients travel from — usually a short local journey.",
+      "The clinic is near Hira Halwai Chauraha on Thornhill Road in Civil Lines, so these are the areas most of our patients travel from — usually a short local journey.",
     areas: [
       {
         name: "Civil Lines",
-        note: "We are here. Sardar Patel Marg, in the heart of the commercial district.",
+        note: "We are here — at 63A/1, Thornhill Road near Hira Halwai Chauraha, in the central Civil Lines area.",
       },
       {
         name: "Georgetown",
@@ -56,7 +56,7 @@ export const areaGroups: {
       },
       {
         name: "Bairahana",
-        note: "Central locality with good access to Sardar Patel Marg.",
+        note: "Central locality with practical access to Civil Lines and the clinic.",
       },
       {
         name: "Rajapur",
