@@ -29,7 +29,7 @@ const jakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Best Dental Clinic in Prayagraj | Eclectic Dental Care",
+    default: "Dentist in Prayagraj | Eclectic Dental Care",
     template: "%s | Eclectic Dental Care",
   },
   description: site.description,
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: SITE_URL,
     siteName: site.name,
-    title: "Best Dental Clinic in Prayagraj | Eclectic Dental Care",
+    title: "Dentist in Prayagraj | Eclectic Dental Care",
     description: site.description,
     images: [
       {
