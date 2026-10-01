@@ -100,8 +100,9 @@ export function Footer() {
           <address className="mt-5 space-y-1 text-sm not-italic leading-relaxed text-ondark-muted">
             <span className="block text-ivory">{site.name}</span>
             <span className="block">{site.address.street}</span>
+            <span className="block">{site.address.landmark}</span>
             <span className="block">
-              {site.address.locality}, {site.address.city}
+              {site.address.neighborhood}, {site.address.locality}, {site.address.city}
             </span>
             <span className="block">
               {site.address.region} {site.address.postalCode}
