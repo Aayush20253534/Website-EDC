@@ -45,7 +45,7 @@ export default function AreasPage() {
       <PageHero
         eyebrow="Areas we serve"
         title={["A dentist in the", "middle of Prayagraj."]}
-        lede="We are on Sardar Patel Marg in Civil Lines — central, and reachable from most of the city without crossing it. Here is where our patients travel from, and what to know if you are coming from further out."
+        lede="We are near Hira Halwai Chauraha in Civil Lines — central, and reachable from most of the city without crossing it. Here is where our patients travel from, and what to know if you are coming from further out."
         trail={trail}
       />
 
@@ -98,7 +98,9 @@ export default function AreasPage() {
                   <span className="block font-semibold">{site.name}</span>
                   {site.address.street}
                   <br />
-                  {site.address.locality}, {site.address.city}
+                  {site.address.landmark}
+                  <br />
+                  {site.address.neighborhood}, {site.address.locality}, {site.address.city}
                   <br />
                   {site.address.region} {site.address.postalCode}
                 </address>
