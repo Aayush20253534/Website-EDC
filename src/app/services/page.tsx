@@ -95,6 +95,18 @@ export default function ServicesPage() {
                     </Reveal>
                   )}
 
+                  {category === "Family" && (
+                    <Reveal delay={0.1}>
+                      <Link
+                        href="/family-dentist-prayagraj"
+                        className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-brick transition-colors hover:text-brick-hover"
+                      >
+                        Family dentist in Prayagraj
+                        <span aria-hidden>→</span>
+                      </Link>
+                    </Reveal>
+                  )}
+
                   <Stagger className="mt-9 grid gap-px overflow-hidden rounded-2xl border border-line bg-line grid-cols-2 lg:grid-cols-3">
                     {list.map((s) => (
                       <StaggerItem key={s.slug}>
