@@ -220,12 +220,12 @@ export default async function ServicePage(props: PageProps<"/services/[slug]">) 
 
               <div className="mt-4 rounded-2xl border border-line bg-sandwash p-6">
                 <p className="eyebrow text-brick">Prayagraj clinic</p>
-                <h3 className="mt-3 font-display text-xl leading-tight text-cocoa">
-                  Available at our Civil Lines clinic
-                </h3>
+                <h2 className="mt-3 font-display text-xl leading-tight text-cocoa">
+                  Treatment at our Civil Lines clinic
+                </h2>
                 <p className="mt-3 text-sm leading-relaxed text-muted">
                   {site.address.street}, near {site.address.landmark},{" "}
-                  {site.address.locality}, {site.address.city}.
+                  {site.address.locality}, {site.address.city} ({site.address.alternateCityName}).
                 </p>
                 <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2">
                   <Link
