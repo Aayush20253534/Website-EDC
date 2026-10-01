@@ -24,6 +24,14 @@ import {
   serviceSchema,
 } from "@/lib/schema";
 
+const cosmeticHubSlugs = new Set<string>([
+  "smile-makeover",
+  "dental-veneers",
+  "teeth-whitening",
+  "invisalign-clear-aligners",
+  "dental-crowns-bridges",
+]);
+
 export function generateStaticParams() {
   return services.map((s) => ({ slug: s.slug }));
 }
@@ -56,6 +64,7 @@ export default async function ServicePage(props: PageProps<"/services/[slug]">) 
   if (!service) notFound();
 
   const doctors = leadDoctors(service.lead);
+  const linksToCosmeticHub = cosmeticHubSlugs.has(service.slug);
   const related = service.related
     .map((s) => getService(s))
     .filter((s): s is NonNullable<typeof s> => Boolean(s));
@@ -240,6 +249,14 @@ export default async function ServicePage(props: PageProps<"/services/[slug]">) 
                   >
                     Areas we serve →
                   </Link>
+                  {linksToCosmeticHub && (
+                    <Link
+                      href="/cosmetic-dentist-prayagraj"
+                      className="text-sm font-semibold text-brick transition-colors hover:text-brick-hover"
+                    >
+                      Cosmetic dentistry →
+                    </Link>
+                  )}
                 </div>
               </div>
             </div>
