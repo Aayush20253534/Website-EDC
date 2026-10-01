@@ -28,7 +28,7 @@ const specialisms = [
   },
   {
     eyebrow: "Endodontics & restorative",
-    doctor: "Dr. Anuja Raj, MDS",
+    doctor: "Dr. Anuja Ray, MDS",
     title: "Saving teeth",
     body: "Root canal treatment, crowns, fillings and gum care by a specialist endodontist. Many root canals are completed in a single visit, and the goal is always to keep the tooth you already have rather than replace it.",
     image: "/images/treatments/root-canal-treatment.webp",
