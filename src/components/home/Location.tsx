@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ButtonLink } from "@/components/ui/Button";
 import { WhatsAppGlyph } from "@/components/layout/Header";
@@ -12,7 +13,7 @@ export function Location() {
           index="09"
           eyebrow="Find us"
           title={["Civil Lines,", "central Prayagraj."]}
-          lede="On Sardar Patel Marg — a short drive from Georgetown, Tagore Town, Katra, Allahpur and Lukerganj."
+          lede="At 63A/1, Thornhill Road near Hira Halwai Chauraha — our Civil Lines dental clinic is easy to reach from Georgetown, Tagore Town, Katra, Allahpur and Lukerganj."
         />
 
         <div className="mt-9 grid gap-6 sm:mt-14 sm:gap-8 lg:grid-cols-12">
@@ -39,10 +40,18 @@ export function Location() {
                   <span className="block font-semibold">{site.name}</span>
                   {site.address.street}
                   <br />
-                  {site.address.locality}, {site.address.city}
+                  {site.address.landmark}
+                  <br />
+                  {site.address.neighborhood}, {site.address.locality}, {site.address.city}
                   <br />
                   {site.address.region} {site.address.postalCode}
                 </address>
+                <Link
+                  href="/areas-we-serve"
+                  className="mt-3 inline-flex text-sm font-semibold text-brick transition-colors hover:text-brick-hover"
+                >
+                  See areas we serve →
+                </Link>
               </div>
 
               <div className="mt-8 border-t border-line pt-6">
