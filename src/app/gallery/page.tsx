@@ -5,12 +5,30 @@ import { ClinicReels } from "@/components/home/ClinicReels";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion";
 import { ParallaxImage } from "@/components/motion/ParallaxImage";
 import { breadcrumbSchema, graph, webPageSchema } from "@/lib/schema";
+import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Clinic Gallery — Inside Our Prayagraj Clinic",
   description:
     "Photos and video from inside Eclectic Dental Care, Civil Lines, Prayagraj — treatment rooms, the iTero scanner, Invisalign planning and our sterilisation setup.",
   alternates: { canonical: "/gallery" },
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: "/gallery",
+    siteName: site.name,
+    title: "Clinic Gallery — Inside Our Prayagraj Clinic | Eclectic Dental Care",
+    description:
+      "Photos and video from inside Eclectic Dental Care, Civil Lines, Prayagraj — treatment rooms, the iTero scanner, Invisalign planning and our sterilisation setup.",
+    images: ["/images/clinic/reception.webp"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Clinic Gallery — Inside Our Prayagraj Clinic | Eclectic Dental Care",
+    description:
+      "Photos and video from inside Eclectic Dental Care, Civil Lines, Prayagraj — treatment rooms, the iTero scanner, Invisalign planning and our sterilisation setup.",
+    images: ["/images/clinic/reception.webp"],
+  },
 };
 
 const trail = [
