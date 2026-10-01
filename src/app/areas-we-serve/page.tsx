@@ -108,10 +108,16 @@ export default function AreasPage() {
                   <ButtonLink href={site.mapsUrl} external size="md">
                     Open in Maps
                   </ButtonLink>
-                  <ButtonLink href={telLink} variant="outline" size="md">
-                    Call the clinic
+                  <ButtonLink href="/locations/civil-lines-prayagraj" variant="outline" size="md">
+                    Civil Lines clinic
                   </ButtonLink>
                 </div>
+                <a
+                  href={telLink}
+                  className="mt-4 inline-flex text-sm font-semibold text-brick transition-colors hover:text-brick-hover"
+                >
+                  Call {site.phoneDisplay} →
+                </a>
               </div>
             </Reveal>
           </div>
