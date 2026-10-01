@@ -19,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     [
       { url: SITE_URL, changeFrequency: "weekly", priority: 1 },
       { url: `${SITE_URL}/services`, changeFrequency: "monthly", priority: 0.9 },
+      { url: `${SITE_URL}/cosmetic-dentist-prayagraj`, changeFrequency: "monthly", priority: 0.85 },
       { url: `${SITE_URL}/locations/civil-lines-prayagraj`, changeFrequency: "monthly", priority: 0.9 },
       { url: `${SITE_URL}/areas-we-serve`, changeFrequency: "monthly", priority: 0.8 },
       { url: `${SITE_URL}/doctors`, changeFrequency: "monthly", priority: 0.8 },
