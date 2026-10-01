@@ -72,7 +72,7 @@ export function Hero() {
               delay={0.15}
             />
             <WordReveal
-              text="in Prayagraj."
+              text="Prayagraj."
               className="display-xl block text-terracotta"
               delay={0.3}
             />
