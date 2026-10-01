@@ -10,7 +10,7 @@ import { breadcrumbSchema, graph, webPageSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Contact & Book an Appointment, Prayagraj",
   description:
-    "Book at Eclectic Dental Care, Civil Lines, Prayagraj. Call +91 87075 37640 or message on WhatsApp. Open Mon–Sat 10am–8pm, Sun 6–8pm.",
+    "Book at Eclectic Dental Care near Hira Halwai Chauraha, Civil Lines, Prayagraj. Call +91 87075 37640 or WhatsApp. Open 7 days a week.",
   alternates: { canonical: "/contact" },
 };
 
@@ -51,7 +51,7 @@ export default function ContactPage() {
               label: "Call the clinic",
               value: site.phoneDisplay,
               href: telLink,
-              hint: "Fastest — Mon–Sat 10am–8pm",
+              hint: "Fastest — open 7 days",
               external: true,
             },
             {
@@ -113,7 +113,9 @@ export default function ContactPage() {
                 <span className="block font-semibold">{site.name}</span>
                 {site.address.street}
                 <br />
-                {site.address.locality}, {site.address.city}
+                {site.address.landmark}
+                <br />
+                {site.address.neighborhood}, {site.address.locality}, {site.address.city}
                 <br />
                 {site.address.region} {site.address.postalCode}
               </address>
@@ -137,9 +139,10 @@ export default function ContactPage() {
               <div className="mt-7 border-t border-line pt-6">
                 <p className="eyebrow text-brick">Getting here</p>
                 <p className="mt-3 text-sm leading-relaxed text-muted">
-                  We are on Sardar Patel Marg in Civil Lines, central Prayagraj —
-                  close to Georgetown, Tagore Town, Katra, Allahpur and Lukerganj,
-                  and a short drive from Prayagraj Junction.
+                  We are at {site.address.street}, near {site.address.landmark} in
+                  Civil Lines, central Prayagraj — close to Georgetown, Tagore Town,
+                  Katra, Allahpur and Lukerganj, and a short drive from Prayagraj
+                  Junction.
                 </p>
                 <div className="mt-5 grid gap-2.5">
                   <ButtonLink href={site.mapsUrl} external size="md">
