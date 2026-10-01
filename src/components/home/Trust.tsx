@@ -48,7 +48,7 @@ function CredentialWall() {
           index="07"
           eyebrow="Why people trust us"
           title={["Credentials you can", "actually check."]}
-          lede="Anyone can claim to be the best dentist in Prayagraj. These are the specific, verifiable things behind the claim — the qualifications, the certification and the equipment."
+          lede="Choosing a dentist in Prayagraj should come down to evidence, not superlatives. These are the qualifications, certification and equipment you can verify before booking."
         />
 
         <Stagger className="mt-9 grid grid-cols-2 gap-3 sm:mt-14 sm:gap-5 lg:grid-cols-4">
