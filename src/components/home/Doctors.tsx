@@ -20,7 +20,7 @@ export function Doctors() {
           index="01"
           eyebrow="The specialists"
           title={["Two MDS specialists.", "One clinic."]}
-          lede="An MDS is a three-year specialist degree taken after BDS. Most general clinics refer these cases out — here, both disciplines sit in the same practice."
+          lede="Meet the two MDS dentists at our Civil Lines dental clinic in Prayagraj. Orthodontics and endodontics are handled in-house, so specialist cases do not need to be sent across the city."
         />
 
         <div className="mt-9 grid gap-10 sm:mt-14 md:grid-cols-2 md:gap-8 lg:gap-12">
@@ -49,7 +49,7 @@ export function Doctors() {
         </Reveal>
 
         <div className="mt-8 flex justify-center sm:mt-10">
-          <ArrowLink href="/doctors">Meet the team</ArrowLink>
+          <ArrowLink href="/doctors">Meet our dentists</ArrowLink>
         </div>
       </div>
     </section>
