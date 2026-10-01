@@ -10,13 +10,38 @@ import { Trust } from "@/components/home/Trust";
 import { Location } from "@/components/home/Location";
 import { FaqSection } from "@/components/sections/FaqSection";
 import { clinicFaqs } from "@/lib/faqs";
-import { faqSchema, graph } from "@/lib/schema";
+import { faqSchema, graph, webPageSchema } from "@/lib/schema";
+import { site } from "@/lib/site";
+
+const homeDescription =
+  "Dentist in Prayagraj (Allahabad) at Eclectic Dental Care, Civil Lines. MDS specialists for braces, Invisalign, root canals, implants, kids dentistry and emergency care.";
 
 export const metadata: Metadata = {
-  title: "Best Dental Clinic in Prayagraj | Eclectic Dental Care",
-  description:
-    "Dental clinic in Civil Lines, Prayagraj. Two MDS specialists — braces, Invisalign, root canals, implants and smile makeovers. Open 7 days.",
+  title: { absolute: "Dentist in Prayagraj | Eclectic Dental Care" },
+  description: homeDescription,
   alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: "/",
+    siteName: site.name,
+    title: "Dentist in Prayagraj | Eclectic Dental Care",
+    description: homeDescription,
+    images: [
+      {
+        url: "/images/clinic/reception.webp",
+        width: 1200,
+        height: 800,
+        alt: "Eclectic Dental Care clinic in Civil Lines, Prayagraj",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dentist in Prayagraj | Eclectic Dental Care",
+    description: homeDescription,
+    images: ["/images/clinic/reception.webp"],
+  },
 };
 
 export default function HomePage() {
@@ -25,7 +50,17 @@ export default function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(graph(faqSchema(clinicFaqs))),
+          __html: JSON.stringify(
+            graph(
+              webPageSchema({
+                type: "WebPage",
+                url: "/",
+                name: "Dentist in Prayagraj | Eclectic Dental Care",
+                description: homeDescription,
+              }),
+              faqSchema(clinicFaqs),
+            ),
+          ),
         }}
       />
 
