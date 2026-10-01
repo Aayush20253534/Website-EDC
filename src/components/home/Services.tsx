@@ -13,10 +13,10 @@ export function Services() {
           index="02"
           eyebrow="What we treat"
           title={["Every dental treatment,", "under one roof."]}
-          lede="Two MDS specialists — orthodontics and endodontics — means complex cases stay here rather than being referred across the city."
+          lede="Dental treatments in Prayagraj for children and adults — from braces, Invisalign and root canals to implants, whitening, gum care and dental emergencies."
           action={
             <ButtonLink href="/services" variant="outline" size="md">
-              All {services.length} treatments
+              All {services.length} dental treatments
             </ButtonLink>
           }
         />
