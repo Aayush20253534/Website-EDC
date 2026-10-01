@@ -83,6 +83,18 @@ export default function ServicesPage() {
                     <MaskText lines={[categoryHeadings[category]]} />
                   </h2>
 
+                  {category === "Cosmetic" && (
+                    <Reveal delay={0.1}>
+                      <Link
+                        href="/cosmetic-dentist-prayagraj"
+                        className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-brick transition-colors hover:text-brick-hover"
+                      >
+                        Cosmetic dentist & smile planning in Prayagraj
+                        <span aria-hidden>→</span>
+                      </Link>
+                    </Reveal>
+                  )}
+
                   <Stagger className="mt-9 grid gap-px overflow-hidden rounded-2xl border border-line bg-line grid-cols-2 lg:grid-cols-3">
                     {list.map((s) => (
                       <StaggerItem key={s.slug}>
