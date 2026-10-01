@@ -86,7 +86,7 @@ export default function GalleryPage() {
       <PageHero
         eyebrow="Inside the clinic"
         title={["The room you", "will actually sit in."]}
-        lede="Every photograph and clip here was taken at our clinic on Sardar Patel Marg. No stock photography, no staged models, no other practice's interiors."
+        lede="Every photograph and clip here was taken at our clinic near Hira Halwai Chauraha in Civil Lines. No stock photography, no staged models, no other practice's interiors."
         trail={trail}
       />
 
