@@ -42,7 +42,7 @@ export function CTABand({
             <Reveal delay={0.12}>
               <p className="mt-6 max-w-lg leading-relaxed text-ondark-muted">
                 {body ??
-                  `${site.addressLine}. Open Monday to Saturday 10am–8pm, and Sunday evenings 6pm–8pm.`}
+                  `${site.addressLine}. Open seven days a week; current clinic timings are listed on the contact and location pages.`}
               </p>
             </Reveal>
           </div>
