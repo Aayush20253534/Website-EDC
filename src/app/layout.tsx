@@ -49,7 +49,6 @@ export const metadata: Metadata = {
   authors: [{ name: site.name, url: SITE_URL }],
   creator: site.name,
   publisher: site.name,
-  alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     locale: "en_IN",
