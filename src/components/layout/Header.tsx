@@ -295,7 +295,7 @@ export function Header() {
                   <p className="mt-6 text-xs leading-relaxed text-muted">
                     {site.addressLine}
                     <br />
-                    Mon–Sat 10am–8pm · Sun 6pm–8pm
+                    Mon, Tue & Thu–Sat 10am–8pm · Wed 9am–8pm · Sun 10am–2pm
                   </p>
                   <p className="mt-3 text-xs text-muted">
                     {doctors.map((d) => `${d.name}, ${d.qualification}`).join(" · ")}
