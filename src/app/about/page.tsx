@@ -87,7 +87,7 @@ export default function AboutPage() {
                   Eclectic Dental Care is set up differently. Both principal
                   dentists hold an MDS — a three-year postgraduate specialisation
                   taken after BDS. Dr. Umang Malviya specialises in orthodontics;
-                  Dr. Anuja Raj in endodontics and conservative dentistry. Between
+                  Dr. Anuja Ray in endodontics and conservative dentistry. Between
                   them, the treatments that usually get referred out are handled
                   here.
                 </p>
