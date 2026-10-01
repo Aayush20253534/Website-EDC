@@ -511,7 +511,7 @@ export default function FamilyDentistPage() {
 
       <CTABand
         eyebrow="Family dentistry"
-        title={["One clinic for", "the family&apos;s dental care."]}
+        title={["One clinic for", "the family's dental care."]}
         body="Family dental appointments are available at our Civil Lines clinic in Prayagraj. Call or WhatsApp to arrange visits for one or more family members."
         waText="Hi, I'd like to book a family dental appointment at Eclectic Dental Care."
       />
