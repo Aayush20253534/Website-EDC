@@ -12,6 +12,23 @@ export const metadata: Metadata = {
   description:
     "Book at Eclectic Dental Care near Hira Halwai Chauraha, Civil Lines, Prayagraj. Call +91 87075 37640 or WhatsApp. Open 7 days a week.",
   alternates: { canonical: "/contact" },
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: "/contact",
+    siteName: site.name,
+    title: "Contact & Book an Appointment | Eclectic Dental Care",
+    description:
+      "Book at Eclectic Dental Care near Hira Halwai Chauraha, Civil Lines, Prayagraj. Call +91 87075 37640 or WhatsApp. Open 7 days a week.",
+    images: ["/images/clinic/reception.webp"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact & Book an Appointment | Eclectic Dental Care",
+    description:
+      "Book at Eclectic Dental Care near Hira Halwai Chauraha, Civil Lines, Prayagraj. Call +91 87075 37640 or WhatsApp. Open 7 days a week.",
+    images: ["/images/clinic/reception.webp"],
+  },
 };
 
 const trail = [
