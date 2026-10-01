@@ -16,6 +16,23 @@ export const metadata: Metadata = {
   description:
     "A specialist-led dental clinic near Hira Halwai Chauraha, Civil Lines, Prayagraj — orthodontics, endodontics and certified Invisalign treatment.",
   alternates: { canonical: "/about" },
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: "/about",
+    siteName: site.name,
+    title: "About Our Dental Clinic in Civil Lines | Eclectic Dental Care",
+    description:
+      "A specialist-led dental clinic near Hira Halwai Chauraha, Civil Lines, Prayagraj — orthodontics, endodontics and certified Invisalign treatment.",
+    images: ["/images/clinic/reception.webp"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Our Dental Clinic in Civil Lines | Eclectic Dental Care",
+    description:
+      "A specialist-led dental clinic near Hira Halwai Chauraha, Civil Lines, Prayagraj — orthodontics, endodontics and certified Invisalign treatment.",
+    images: ["/images/clinic/reception.webp"],
+  },
 };
 
 const trail = [
