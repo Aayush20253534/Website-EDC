@@ -12,7 +12,7 @@ export const clinicFaqs = [
   },
   {
     q: "What are your clinic timings?",
-    a: "Monday to Saturday, 10:00 am to 8:00 pm. Sunday, 6:00 pm to 8:00 pm. We keep slots free each day for genuine dental emergencies — call ahead so we can prioritise you.",
+    a: "We are open seven days a week. Monday, Tuesday and Thursday to Saturday: 10:00 am to 8:00 pm. Wednesday: 9:00 am to 8:00 pm. Sunday: 10:00 am to 2:00 pm. Call ahead for a dental emergency so we can prioritise you.",
   },
   {
     q: "Do I need an appointment, or can I walk in?",
