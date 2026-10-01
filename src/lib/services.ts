@@ -188,7 +188,7 @@ export const services: Service[] = [
   {
     slug: "braces-orthodontic-treatment",
     name: "Braces & Orthodontics",
-    heading: "Braces and orthodontic treatment",
+    heading: "Braces and orthodontic treatment in Prayagraj",
     category: "Orthodontics",
     icon: "braces",
     featured: true,
@@ -196,7 +196,7 @@ export const services: Service[] = [
       "Metal, ceramic and self-ligating braces planned by an MDS orthodontist — for children, teenagers and adults.",
     metaTitle: "Braces & Orthodontist in Prayagraj",
     metaDescription:
-      "Metal, ceramic and self-ligating braces in Civil Lines, Prayagraj. Treatment planned by Dr. Umang Malviya, MDS Orthodontics. Book an orthodontic consultation.",
+      "Braces in Civil Lines, Prayagraj: metal, ceramic and self-ligating options planned by Dr. Umang Malviya, MDS Orthodontics. Book a consultation.",
     image: "/images/treatments/braces-orthodontic-treatment.webp",
     imageAlt:
       "A young woman smiling, showing fixed orthodontic braces on her teeth",
@@ -288,7 +288,7 @@ export const services: Service[] = [
   {
     slug: "root-canal-treatment",
     name: "Root Canal Treatment",
-    heading: "Root canal treatment (endodontics)",
+    heading: "Root canal treatment in Prayagraj",
     category: "Restorative",
     icon: "tooth",
     featured: true,
@@ -296,7 +296,7 @@ export const services: Service[] = [
       "Single-visit root canals where suitable, performed by an MDS endodontist under magnification.",
     metaTitle: "Root Canal Treatment in Prayagraj",
     metaDescription:
-      "Painless root canal treatment in Civil Lines, Prayagraj by Dr. Anuja Raj, MDS Endodontics. Single-visit RCT available. Save the natural tooth — book today.",
+      "Root canal treatment in Civil Lines, Prayagraj by Dr. Anuja Ray, MDS Endodontics. Single-visit RCT where suitable. Book a consultation.",
     image: "/images/treatments/root-canal-treatment.webp",
     imageAlt:
       "Two dentists reviewing a dental X-ray to plan root canal treatment",
@@ -304,7 +304,7 @@ export const services: Service[] = [
     clinicImageAlt: "Treatment room used for root canal therapy at Eclectic Dental Care, Prayagraj",
     lead: "anuja",
     facts: [
-      { label: "Treated by", value: "Dr. Anuja Raj, MDS" },
+      { label: "Treated by", value: "Dr. Anuja Ray, MDS" },
       { label: "Visits", value: "1 – 2 (case dependent)" },
       { label: "Anaesthesia", value: "Local — the tooth is numb" },
       { label: "Success rate", value: "High, when done properly" },
@@ -312,7 +312,7 @@ export const services: Service[] = [
     overview: [
       "A root canal treats infection inside the tooth. When decay or a crack reaches the pulp — the nerve and blood supply at the centre — the tissue becomes inflamed or infected, and that is what produces severe, throbbing toothache. Root canal treatment removes the infected pulp, disinfects and shapes the canals, and seals them.",
       "The purpose is simple: to keep your natural tooth. No implant or bridge functions quite as well as the tooth you were born with, and a properly treated root-canal tooth can last decades.",
-      "At Eclectic Dental Care, root canals are performed by Dr. Anuja Raj, who holds an MDS in Conservative Dentistry and Endodontics — the specialism dedicated entirely to this work. Many straightforward cases are completed in a single visit.",
+      "At Eclectic Dental Care, root canals are performed by Dr. Anuja Ray, who holds an MDS in Conservative Dentistry and Endodontics — the specialism dedicated entirely to this work. Many straightforward cases are completed in a single visit.",
     ],
     signs: [
       "Severe, spontaneous toothache — especially one that wakes you at night",
@@ -407,7 +407,7 @@ export const services: Service[] = [
   {
     slug: "dental-implants",
     name: "Dental Implants",
-    heading: "Dental implants",
+    heading: "Dental implants in Prayagraj",
     category: "Surgical",
     icon: "implant",
     featured: true,
@@ -527,7 +527,7 @@ export const services: Service[] = [
   {
     slug: "smile-makeover",
     name: "Smile Makeover",
-    heading: "Smile makeover",
+    heading: "Smile makeover in Prayagraj",
     category: "Cosmetic",
     icon: "sparkle",
     featured: true,
@@ -623,7 +623,7 @@ export const services: Service[] = [
   {
     slug: "teeth-whitening",
     name: "Teeth Whitening",
-    heading: "Professional teeth whitening",
+    heading: "Professional teeth whitening in Prayagraj",
     category: "Cosmetic",
     icon: "sparkle",
     summary:
@@ -713,7 +713,7 @@ export const services: Service[] = [
   {
     slug: "dental-veneers",
     name: "Veneers",
-    heading: "Dental veneers",
+    heading: "Dental veneers in Prayagraj",
     category: "Cosmetic",
     icon: "layers",
     summary:
@@ -821,7 +821,7 @@ export const services: Service[] = [
   {
     slug: "dental-crowns-bridges",
     name: "Crowns & Bridges",
-    heading: "Dental crowns and bridges",
+    heading: "Dental crowns and bridges in Prayagraj",
     category: "Restorative",
     icon: "crown",
     summary:
@@ -928,7 +928,7 @@ export const services: Service[] = [
   {
     slug: "kids-dentistry",
     name: "Kids Dentistry",
-    heading: "Children's dentistry",
+    heading: "Kids dentistry in Prayagraj",
     category: "Family",
     icon: "child",
     summary:
@@ -1024,14 +1024,14 @@ export const services: Service[] = [
   {
     slug: "gum-disease-treatment",
     name: "Gum Treatment",
-    heading: "Gum disease treatment",
+    heading: "Gum disease treatment in Prayagraj",
     category: "Preventive",
     icon: "shield",
     summary:
       "Treatment for bleeding, receding or infected gums — the leading cause of adult tooth loss, and largely preventable.",
     metaTitle: "Gum Disease Treatment in Prayagraj",
     metaDescription:
-      "Gum disease and bleeding gums treatment in Civil Lines, Prayagraj. Deep cleaning, scaling and root planing for gingivitis and periodontitis. Book an assessment.",
+      "Gum disease and bleeding gums treatment in Civil Lines, Prayagraj. Deep cleaning, scaling and root planing for gingivitis and periodontitis.",
     image: "/images/treatments/gum-disease-treatment.webp",
     imageAlt:
       "A dentist examining a patient's gums during a periodontal assessment",
@@ -1120,14 +1120,14 @@ export const services: Service[] = [
   {
     slug: "wisdom-tooth-removal",
     name: "Wisdom Tooth Removal",
-    heading: "Wisdom tooth removal",
+    heading: "Wisdom tooth removal in Prayagraj",
     category: "Surgical",
     icon: "extract",
     summary:
       "Assessment and surgical removal of impacted or painful wisdom teeth, with clear aftercare.",
     metaTitle: "Wisdom Tooth Removal in Prayagraj",
     metaDescription:
-      "Wisdom tooth extraction in Civil Lines, Prayagraj. Assessment and surgical removal of impacted wisdom teeth under local anaesthesia. Same-week appointments.",
+      "Wisdom tooth removal in Civil Lines, Prayagraj. Assessment and extraction of impacted wisdom teeth under local anaesthesia. Book a consultation.",
     image: "/images/treatments/wisdom-tooth-removal.webp",
     imageAlt:
       "A dentist in protective gear performing a surgical extraction",
@@ -1216,7 +1216,7 @@ export const services: Service[] = [
   {
     slug: "tooth-coloured-fillings",
     name: "Tooth-Coloured Fillings",
-    heading: "Tooth-coloured fillings",
+    heading: "Tooth-coloured fillings in Prayagraj",
     category: "Restorative",
     icon: "filling",
     summary:
@@ -1307,7 +1307,7 @@ export const services: Service[] = [
   {
     slug: "scaling-and-polishing",
     name: "Scaling & Polishing",
-    heading: "Scaling and polishing",
+    heading: "Teeth cleaning, scaling and polishing in Prayagraj",
     category: "Preventive",
     icon: "shield",
     summary:
@@ -1398,7 +1398,7 @@ export const services: Service[] = [
   {
     slug: "dentures-full-mouth-rehab",
     name: "Dentures & Full Mouth Rehab",
-    heading: "Dentures and full mouth rehabilitation",
+    heading: "Dentures and full mouth rehabilitation in Prayagraj",
     category: "Restorative",
     icon: "denture",
     summary:
@@ -1512,7 +1512,7 @@ export const services: Service[] = [
   {
     slug: "emergency-dental-care",
     name: "Emergency Dental Care",
-    heading: "Emergency dental care",
+    heading: "Emergency dental care in Prayagraj",
     category: "Preventive",
     icon: "alert",
     summary:
@@ -1573,7 +1573,7 @@ export const services: Service[] = [
       "Both specialists available on site",
       "Pain relief prioritised before long-term planning",
       "Phone guidance on first-aid before you arrive",
-      "Open seven days, including Sunday evenings",
+      "Open seven days, including Sunday",
     ],
     faqs: [
       {
