@@ -20,6 +20,7 @@ import {
   faqSchema,
   graph,
   medicalWebPageSchema,
+  physicianSchema,
   serviceSchema,
 } from "@/lib/schema";
 
@@ -81,6 +82,7 @@ export default async function ServicePage(props: PageProps<"/services/[slug]">) 
                 aboutId: `${SITE_URL}/services/${service.slug}#procedure`,
                 image: service.image,
               }),
+              ...doctors.map((doctor) => physicianSchema(doctor)),
               faqSchema(service.faqs),
               breadcrumbSchema(trail),
             ),
@@ -215,6 +217,31 @@ export default async function ServicePage(props: PageProps<"/services/[slug]">) 
                   </p>
                 </div>
               </div>
+
+              <div className="mt-4 rounded-2xl border border-line bg-sandwash p-6">
+                <p className="eyebrow text-brick">Prayagraj clinic</p>
+                <h3 className="mt-3 font-display text-xl leading-tight text-cocoa">
+                  Available at our Civil Lines clinic
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-muted">
+                  {site.address.street}, near {site.address.landmark},{" "}
+                  {site.address.locality}, {site.address.city}.
+                </p>
+                <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2">
+                  <Link
+                    href="/locations/civil-lines-prayagraj"
+                    className="text-sm font-semibold text-brick transition-colors hover:text-brick-hover"
+                  >
+                    Clinic & directions →
+                  </Link>
+                  <Link
+                    href="/areas-we-serve"
+                    className="text-sm font-semibold text-brick transition-colors hover:text-brick-hover"
+                  >
+                    Areas we serve →
+                  </Link>
+                </div>
+              </div>
             </div>
           </aside>
         </div>
@@ -242,7 +269,14 @@ export default async function ServicePage(props: PageProps<"/services/[slug]">) 
                   className="aspect-[4/3] rounded-2xl"
                 />
                 <figcaption className="mt-3 text-xs text-muted">
-                  At our clinic on {site.address.street}, {site.address.locality}.
+                  Real clinic photography from{" "}
+                  <Link
+                    href="/locations/civil-lines-prayagraj"
+                    className="font-medium text-brick hover:text-brick-hover"
+                  >
+                    Eclectic Dental Care in Civil Lines, Prayagraj
+                  </Link>
+                  .
                 </figcaption>
               </figure>
             </Reveal>
@@ -418,7 +452,7 @@ export default async function ServicePage(props: PageProps<"/services/[slug]">) 
             <SectionHeading
               eyebrow="Questions"
               title={[`${service.name}`, "— your questions."]}
-              lede="The things patients in Prayagraj most often ask us about this treatment."
+              lede="The things patients at our Civil Lines clinic in Prayagraj most often ask us about this treatment."
             />
           </div>
           <div className="lg:col-span-7">
@@ -468,6 +502,7 @@ export default async function ServicePage(props: PageProps<"/services/[slug]">) 
       <CTABand
         eyebrow={service.name}
         title={["Book your", `${service.name.toLowerCase()} consultation.`]}
+        body={`${service.name} consultations are available at our Civil Lines clinic in Prayagraj. Call or WhatsApp to book, ask a question or get directions.`}
         waText={`Hi, I'd like to ask about ${service.name} at Eclectic Dental Care.`}
       />
     </>
