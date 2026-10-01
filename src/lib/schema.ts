@@ -1,7 +1,6 @@
 import { SITE_URL, site } from "./site";
 import { services, type Service } from "./services";
 import type { Doctor } from "./doctors";
-import { aggregate, hasReviews, reviews } from "./testimonials";
 
 const CLINIC_ID = `${SITE_URL}/#clinic`;
 const ORG_ID = `${SITE_URL}/#organization`;
@@ -9,8 +8,8 @@ const WEBSITE_ID = `${SITE_URL}/#website`;
 
 const postalAddress = {
   "@type": "PostalAddress",
-  streetAddress: site.address.street,
-  addressLocality: `${site.address.locality}, ${site.address.city}`,
+  streetAddress: `${site.address.street}, ${site.address.landmark}, ${site.address.neighborhood}, ${site.address.locality}`,
+  addressLocality: site.address.city,
   addressRegion: site.address.region,
   postalCode: site.address.postalCode,
   addressCountry: site.address.country,
@@ -27,7 +26,8 @@ const openingHours = site.hours.map((h) => ({
  * The primary local-SEO entity. `Dentist` is a subtype of both LocalBusiness
  * and MedicalBusiness, which is exactly what Google wants for a dental clinic.
  *
- * AggregateRating is emitted ONLY when real reviews exist — see testimonials.ts.
+ * Review markup is intentionally omitted here. Reviews about a business on
+ * that business's own site are self-serving for Google's review rich results.
  */
 export function clinicSchema() {
   const node: Record<string, unknown> = {
@@ -39,7 +39,11 @@ export function clinicSchema() {
     url: SITE_URL,
     telephone: site.phone,
     email: site.email,
-    image: `${SITE_URL}/brand/logo-lockup.webp`,
+    image: [
+      `${SITE_URL}/images/clinic/reception.webp`,
+      `${SITE_URL}/images/clinic/operatory-wide.webp`,
+      `${SITE_URL}/brand/logo-lockup.webp`,
+    ],
     logo: `${SITE_URL}/brand/logo-lockup.webp`,
     priceRange: "₹₹",
     currenciesAccepted: "INR",
@@ -51,7 +55,7 @@ export function clinicSchema() {
     },
     hasMap: site.mapsUrl,
     openingHoursSpecification: openingHours,
-    sameAs: [site.social.instagram, site.mapsUrl],
+    sameAs: [site.social.instagram],
     areaServed: [
       {
         "@type": "City",
@@ -100,27 +104,6 @@ export function clinicSchema() {
     ],
   };
 
-  if (hasReviews && aggregate) {
-    node.aggregateRating = {
-      "@type": "AggregateRating",
-      ratingValue: aggregate.rating,
-      reviewCount: aggregate.count,
-      bestRating: 5,
-      worstRating: 1,
-    };
-    node.review = reviews.slice(0, 5).map((r) => ({
-      "@type": "Review",
-      author: { "@type": "Person", name: r.name },
-      reviewRating: {
-        "@type": "Rating",
-        ratingValue: r.rating,
-        bestRating: 5,
-        worstRating: 1,
-      },
-      reviewBody: r.text,
-      ...(r.date ? { datePublished: r.date } : {}),
-    }));
-  }
 
   return node;
 }
@@ -135,6 +118,9 @@ export function organizationSchema() {
       "@type": "ImageObject",
       url: `${SITE_URL}/brand/logo-lockup.webp`,
     },
+    telephone: site.phone,
+    email: site.email,
+    address: postalAddress,
     contactPoint: {
       "@type": "ContactPoint",
       telephone: site.phone,
@@ -152,6 +138,7 @@ export function websiteSchema() {
     "@id": WEBSITE_ID,
     url: SITE_URL,
     name: site.name,
+    description: site.description,
     publisher: { "@id": ORG_ID },
     inLanguage: "en-IN",
   };
