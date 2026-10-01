@@ -83,6 +83,7 @@ export function Footer() {
           <FooterLink href="/services">All treatments →</FooterLink>
           <FooterLink href="/cosmetic-dentist-prayagraj">Cosmetic dentistry →</FooterLink>
           <FooterLink href="/family-dentist-prayagraj">Family dentistry →</FooterLink>
+          <FooterLink href="/dental-checkup-prayagraj">Dental checkup →</FooterLink>
         </FooterColumn>
 
         <FooterColumn title="Clinic">
