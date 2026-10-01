@@ -13,6 +13,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { MaskText, Reveal, Stagger, StaggerItem } from "@/components/motion";
 import { ParallaxImage } from "@/components/motion/ParallaxImage";
 import { services, getService, servicePath } from "@/lib/services";
+import { guides } from "@/lib/guides";
 import { leadDoctors } from "@/lib/doctors";
 import { SITE_URL, site } from "@/lib/site";
 import {
@@ -88,6 +89,9 @@ export default async function ServicePage(props: PageProps<"/services/[slug]">) 
   const related = service.related
     .map((s) => getService(s))
     .filter((s): s is NonNullable<typeof s> => Boolean(s));
+  const relatedGuides = guides.filter(
+    (guide) => guide.relatedServiceSlug === service.slug,
+  );
 
   const trail = [
     { name: "Home", url: "/" },
@@ -494,6 +498,55 @@ export default async function ServicePage(props: PageProps<"/services/[slug]">) 
                 </div>
               </Reveal>
             </div>
+          </div>
+        </section>
+      )}
+
+      {relatedGuides.length > 0 && (
+        <section className="section bg-sandwash">
+          <div className="shell">
+            <div className="flex flex-wrap items-end justify-between gap-6">
+              <div>
+                <p className="eyebrow text-brick">Patient guides</p>
+                <h2 className="display-md mt-4 text-cocoa">
+                  Read before your consultation
+                </h2>
+              </div>
+              <ArrowLink href="/guides">All dental guides</ArrowLink>
+            </div>
+
+            <Stagger className="mt-10 grid gap-4 md:grid-cols-2">
+              {relatedGuides.map((guide) => (
+                <StaggerItem key={guide.slug}>
+                  <Link
+                    href={`/guides/${guide.slug}`}
+                    className="group grid h-full overflow-hidden rounded-2xl border border-line bg-surface sm:grid-cols-[0.8fr_1.2fr]"
+                  >
+                    <div className="relative min-h-[12rem] overflow-hidden bg-sunk">
+                      <Image
+                        src={guide.image}
+                        alt={guide.imageAlt}
+                        fill
+                        sizes="(max-width: 640px) 92vw, 24vw"
+                        className="object-cover transition-transform duration-[900ms] group-hover:scale-[1.04]"
+                      />
+                    </div>
+                    <div className="flex flex-col justify-center p-5 sm:p-6">
+                      <p className="eyebrow text-brick">{guide.category}</p>
+                      <h3 className="mt-3 font-display text-xl leading-tight text-cocoa">
+                        {guide.title}
+                      </h3>
+                      <p className="mt-3 text-sm leading-relaxed text-muted">
+                        {guide.excerpt}
+                      </p>
+                      <span className="mt-5 text-sm font-semibold text-brick">
+                        Read guide →
+                      </span>
+                    </div>
+                  </Link>
+                </StaggerItem>
+              ))}
+            </Stagger>
           </div>
         </section>
       )}
