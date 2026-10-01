@@ -15,7 +15,7 @@ import {
 export const metadata: Metadata = {
   title: "Our Dentists — MDS Specialists in Prayagraj",
   description:
-    "Meet Dr. Umang Malviya (MDS Orthodontics, certified Invisalign provider) and Dr. Anuja Raj (MDS Endodontics) at Eclectic Dental Care, Civil Lines, Prayagraj.",
+    "Meet Dr. Umang Malviya (MDS Orthodontics, certified Invisalign provider) and Dr. Anuja Ray (MDS Endodontics) at Eclectic Dental Care, Civil Lines, Prayagraj.",
   alternates: { canonical: "/doctors" },
 };
 
