@@ -11,7 +11,7 @@ export function WhyUs() {
   const stats = [
     { value: 2, suffix: "", label: "MDS specialists on site", sub: "Orthodontics · Endodontics" },
     { value: services.length, suffix: "", label: "Treatments offered", sub: "From cleanings to implants" },
-    { value: 7, suffix: "", label: "Days open each week", sub: "Including Sunday evenings" },
+    { value: 7, suffix: "", label: "Days open each week", sub: "Including Sunday" },
     { value: 1, suffix: "", label: "Visit for many root canals", sub: "Where clinically appropriate" },
   ];
 
