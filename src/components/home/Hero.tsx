@@ -61,13 +61,13 @@ export function Hero() {
 
         <h1 className="mt-7 max-w-5xl">
           <span className="sr-only">
-            Best dental clinic in Prayagraj — Eclectic Dental Care, a certified
-            Invisalign provider in Civil Lines.
+            Dentist in Prayagraj — Eclectic Dental Care, a specialist dental
+            clinic in Civil Lines, Prayagraj (Allahabad).
           </span>
 
           <span aria-hidden className="block">
             <WordReveal
-              text="Best Dental Clinic"
+              text="Dentist in"
               className="display-xl block text-cocoa"
               delay={0.15}
             />
@@ -89,9 +89,9 @@ export function Hero() {
             className="lg:col-span-7"
           >
             <p className="lede max-w-xl">
-              Two <strong className="font-semibold text-cocoa">MDS specialists</strong>{" "}
-              under one roof — orthodontics and endodontics, with certified
-              Invisalign treatment and iTero digital scanning on site.
+              A specialist <strong className="font-semibold text-cocoa">dental clinic in Civil Lines</strong>,{" "}
+              Prayagraj (Allahabad), with two MDS specialists for orthodontics,
+              endodontics, Invisalign and digital treatment planning.
             </p>
           </motion.div>
 
@@ -131,8 +131,8 @@ export function Hero() {
             {site.phoneDisplay}
           </a>
           <p className="text-muted">
-            Open today ·{" "}
-            <span className="font-medium text-cocoa">Mon–Sat 10am–8pm</span>
+            <span className="font-medium text-cocoa">Open 7 days</span>
+            {" · "}Civil Lines, Prayagraj
           </p>
         </motion.div>
       </motion.div>
