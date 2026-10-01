@@ -241,6 +241,46 @@ export function medicalWebPageSchema({
   };
 }
 
+export function articleSchema({
+  url,
+  headline,
+  description,
+  image,
+  aboutName,
+}: {
+  url: string;
+  headline: string;
+  description: string;
+  image: string;
+  aboutName: string;
+}) {
+  return {
+    "@type": "Article",
+    "@id": `${SITE_URL}${url}#article`,
+    headline,
+    description,
+    url: `${SITE_URL}${url}`,
+    image: `${SITE_URL}${image}`,
+    inLanguage: "en-IN",
+    mainEntityOfPage: { "@id": `${SITE_URL}${url}#webpage` },
+    isPartOf: { "@id": WEBSITE_ID },
+    author: { "@id": ORG_ID },
+    publisher: { "@id": ORG_ID },
+    datePublished: "2026-10-01",
+    dateModified: "2026-10-01",
+    about: {
+      "@type": "Thing",
+      name: aboutName,
+    },
+    spatialCoverage: {
+      "@type": "City",
+      name: "Prayagraj",
+      alternateName: "Allahabad",
+      containedInPlace: { "@type": "State", name: "Uttar Pradesh" },
+    },
+  };
+}
+
 /** Generic page-type node so every route declares what kind of page it is. */
 export function webPageSchema({
   type,
