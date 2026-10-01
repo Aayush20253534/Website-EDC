@@ -37,6 +37,12 @@ export async function generateMetadata(
       type: "profile",
       // See note in services/[slug]/page.tsx — let the generated card win.
     },
+    twitter: {
+      card: "summary_large_image",
+      title: doctor.metaTitle,
+      description: doctor.metaDescription,
+      images: [doctor.image],
+    },
   };
 }
 
