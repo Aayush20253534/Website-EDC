@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   keywords: [
     "dental clinic in Prayagraj",
     "dentist in Prayagraj",
-    "best dentist in Allahabad",
+    "dentist in Allahabad",
     "Invisalign Prayagraj",
     "orthodontist in Prayagraj",
     "braces treatment Prayagraj",
