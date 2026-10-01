@@ -26,7 +26,7 @@ function CredentialWall() {
     },
     {
       title: "MDS Endodontics",
-      body: "Dr. Anuja Raj holds a three-year specialist degree in Conservative Dentistry & Endodontics.",
+      body: "Dr. Anuja Ray holds a three-year specialist degree in Conservative Dentistry & Endodontics.",
       tag: "Verified qualification",
     },
     {
