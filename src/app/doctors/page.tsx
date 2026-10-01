@@ -5,6 +5,7 @@ import { CTABand } from "@/components/sections/CTABand";
 import { Reveal } from "@/components/motion";
 import { ParallaxImage } from "@/components/motion/ParallaxImage";
 import { doctors } from "@/lib/doctors";
+import { site } from "@/lib/site";
 import {
   breadcrumbSchema,
   graph,
@@ -17,6 +18,23 @@ export const metadata: Metadata = {
   description:
     "Meet Dr. Umang Malviya (MDS Orthodontics, certified Invisalign provider) and Dr. Anuja Ray (MDS Endodontics) at Eclectic Dental Care, Civil Lines, Prayagraj.",
   alternates: { canonical: "/doctors" },
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: "/doctors",
+    siteName: site.name,
+    title: "Our Dentists — MDS Specialists in Prayagraj | Eclectic Dental Care",
+    description:
+      "Meet Dr. Umang Malviya (MDS Orthodontics, certified Invisalign provider) and Dr. Anuja Ray (MDS Endodontics) at Eclectic Dental Care, Civil Lines, Prayagraj.",
+    images: ["/images/clinic/reception.webp"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Our Dentists — MDS Specialists in Prayagraj | Eclectic Dental Care",
+    description:
+      "Meet Dr. Umang Malviya (MDS Orthodontics, certified Invisalign provider) and Dr. Anuja Ray (MDS Endodontics) at Eclectic Dental Care, Civil Lines, Prayagraj.",
+    images: ["/images/clinic/reception.webp"],
+  },
 };
 
 const trail = [
